@@ -1,0 +1,365 @@
+/* 헤더 */
+div.hdrWrap>div.header{
+    width: 90%;
+    max-width: 700px;
+  }
+  div.hdrWrap>div.header>div.hdrLeft>h4{
+    font-size: 16px;
+  }
+  div.hdrWrap>div.header>div.hdrRight>h4{
+    font-size: 16px;
+    margin-top: 0px;
+  }
+  div.hdrWrap>div.header>div.middle>h1{
+    margin-top: 0px;
+    width: calc(100% / 4 * 2.5);
+    height: 80px;
+  }
+  div.hdrWrap>div.header>div.middle{
+    width: calc(100% / 8 * 4);
+    height: 80px;
+  }
+  div.hdrWrap>div.header>div.hdrLeft{
+    margin-top: 0px;
+    width: calc(100% / 8 * 2);
+    height: 200px;
+  }
+  div.hdrWrap>div.header>div.middle>p{
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  div.hdrWrap>div.header>div.hdrRight{
+    width: calc(100% / 8 * 2);
+    height: 200px;
+  }
+  div.hdrWrap{
+    height: 80px;
+
+  }
+  
+  /* 움직이는 애들 */
+  div.hdrWrap>div.header>div.hdrRight2{
+    width: calc(100% / 8 * 2);
+  }
+  
+  div.hdrWrap>div.header>div.middle>div.btn>p{
+    height: 20px;
+    width: calc(100% / 4);
+    line-height: 20px;
+    font-size: 10px;
+  }
+
+/* 추가수정 */
+/* 오른쪽 */
+div.hdrWrap>div.header>div.hdrRight2>h4{
+    padding-top: 30px;
+  }
+  div.hdrWrap>div.header>div.hdrRight2>h5{
+    margin-top: 30px;
+  }
+  div.hdrWrap>div.header>div.hdrRight2{
+    height: 200px;
+  }
+  
+  /* 왼쪽 */
+  div.hdrWrap>div.header>div.hdrLeft1>h4{
+    padding-top: 30px;
+  }
+  div.hdrWrap>div.header>div.hdrLeft1>ul{
+    padding-top: 30px;
+  }
+  div.hdrWrap>div.header>div.hdrLeft{
+    height: 80px;
+  }
+
+
+  /* main */
+  .mainWrap{
+    background-image: url('../images/sub_3/sub03_main_tab_img.jpg');
+  }
+  .main{
+      height: 400px;
+      width: 90%;
+      max-width: 700px;
+  }
+
+  .main .texts h4{
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 0px;
+      padding-top: 80px;
+  }
+  .main .texts h5{
+      font-size: 12px;
+      line-height: 30px;
+      margin-top: 155px;
+
+  }
+
+
+  /* cnt common */
+
+  div.cntWrap{
+    margin-top: 40px;
+}
+
+  div.cntWrap>div.content{
+    width: 90%;
+    max-width: 700px;
+}
+
+
+/* cnt01 */
+
+div.cntWrap>div.content.cnt01>section>div.artView>div.artGroup>div.article>div.image{
+  height: 200px;
+  margin-top: 40px;
+}
+
+div.cntWrap>.content.cnt01 header{
+  width: calc(100% / 8 * 2.0);
+}
+
+div.cntWrap>.content.cnt01 header h4{
+  font-size: 12px;
+  line-height: 20px;
+}
+div.cntWrap>.content.cnt01 header h3{
+  font-size: 20px;
+  line-height: 40px;
+}
+div.cntWrap>.content.cnt01 section{
+  width: calc(100% / 8 * 5.6);
+}
+
+div.cntWrap>div.content.cnt01>section>div.artView>div.artGroup{
+  width: 203%;
+}
+div.cntWrap>div.content.cnt01>section>div.artView>div.artGroup>div.article{
+  width: calc(100% / 6 - 40px);
+  margin: 0 20px;
+}
+
+div.cntWrap>.content.cnt01 section{
+  margin-top: -40px;
+}
+
+div.cntWrap>div.content.cnt01>section>div.artView>div.artGroup>div.article>div.texts{
+  margin-top: 0px;
+}
+div.cntWrap>.content.cnt01 header .btns{
+  width: 46%;
+}
+
+div.cntWrap>.content.cnt01 header .bar{
+  width: 50%;
+}
+
+
+/* cnt02 */
+div.cntWrap>.content.cnt02 section .artLeft{
+  width: calc(100% / 8 * 4.5);
+}
+div.cntWrap>.content.cnt02 section .artLeft .images .ovrGrid .image.i1{
+  height: 320px;
+  width: 80%;
+}
+div.cntWrap>.content.cnt02 section .artLeft .images .ovrGrid .image.i2{
+  height: 280px;
+  margin-top: 100px;
+}
+div.cntWrap>.content.cnt02 section .artLeft .images .ovrGrid{
+  width: calc((100vw - 700px) / 2 + 100%);
+  margin-left: min(calc((100vw - 700px) / -2),calc((100vw - 89vw) / -2));
+  min-width: calc((100vw - 90vw) / 2 + 100%);
+}
+div.cntWrap>.content.cnt02 section .artRight .texts{
+  margin-left: 10px;
+}
+div.cntWrap>.content.cnt02 section .artRight .texts h2{
+  font-size: 20px;
+  margin-top: 40px;
+}
+div.cntWrap>.content.cnt02 section .artRight .texts p{
+  margin-top: 0px;
+  font-size: 12px;
+  line-height: 15px;
+
+}
+div.cntWrap>.content.cnt02 section .artRight .images .ovrGrid .image{
+  height: 80px;
+}
+div.cntWrap>.content.cnt02 section .artRight .images .ovrGrid .text{
+  height: 80px;
+  margin-top: -80px;
+  padding: 10px;
+  font-size: 10px;
+  line-height: 15px;
+}
+div.cntWrap>.content.cnt02 section .artRight .images .ovrGrid .text p{
+  height: 60px;
+  overflow: hidden;
+}
+div.cntWrap>.content.cnt02 section .artRight .images .ovrGrid{
+  height: 100px;
+  margin-top: -120px;
+}
+div.cntWrap>.content.cnt02 section .artRight .images .ovrGrid{
+  width: calc((100vw - 700px) / 2 + 80%);
+  min-width: calc((100vw - 80vw) / 2 + 80%);
+}
+div.cntWrap>.content.cnt02 section .artRight .images .ovrGrid .group{
+  height: 80px;
+}
+div.cntWrap>.content.cnt02 section .artLeft{
+  height: 400px;
+  width: calc(100% / 8 * 4 - 20px);
+}
+div.cntWrap>.content.cnt02 section .artRight{
+  width: calc(100% / 8 * 4);
+}
+/* cnt03 */
+div.cntWrap>.content.cnt03 section .artRight .images .ovrGrid .image.i2{
+  display: none;
+}
+div.cntWrap>.content.cnt03 section .artLeft{
+  width: calc(50% - 20px);
+}
+div.cntWrap>.content.cnt03 section .artRight{
+  /* width: calc(100% / 8 * 4 -20px); */
+}
+div.cntWrap>.content.cnt03 section .artRight .images .ovrGrid .image.i1{
+  width: 100%;
+  height: 240px;
+  top: 0px;
+}
+div.cntWrap>.content.cnt03 section .artRight .images .ovrGrid{
+  width: 100%;
+}
+div.cntWrap>.content.cnt03 section .artRight{
+  width: calc(50% - 20px);
+  margin-left: 20px;
+}
+div.cntWrap>.content.cnt03 section .images{
+  margin-top: 0px;
+}
+div.cntWrap>.content.cnt03 section .artLeft article .texts{
+  margin-top: 0px;
+}
+div.cntWrap>.content.cnt03 section{
+  height: 280px;
+}
+div.cntWrap>.content.cnt03{
+  padding-bottom: 0px;
+}
+div.cntWrap>.content.cnt03 section .artMiddle .images .ovrGrid{
+  width: calc((100vw - 700px) / 2 );
+  margin-left: 0px;
+  height: 80px;
+  min-width: 100%;
+}
+div.cntWrap>.content.cnt03 section .artLeft article .texts h3{
+  font-size: 20px;
+}
+div.cntWrap>.content.cnt03 section .artLeft article .texts p{
+  margin-top: 0px;
+  font-size: 12px;
+  height: 80px;
+  overflow: hidden;
+}
+div.cntWrap>.content.cnt03 section .artLeft article .texts p br{
+  display: none;
+}
+div.cntWrap>.content.cnt03 section .artMiddle{
+  margin-top: 130px;
+  width: 50%;
+}
+div.cntWrap>.content.cnt03 section .artMiddle .images .ovrGrid .group:nth-child(1){
+  margin-left: 0px;
+}
+div.cntWrap>.content.cnt03 section .artMiddle .images .ovrGrid .text{
+  height: 80px;
+  margin-top: -80px;
+  padding: 10px;
+  font-size: 10px;
+}
+div.cntWrap>.content.cnt03 section .artMiddle .images .ovrGrid .text p{
+  height: 60px;
+  overflow: hidden;
+}
+
+
+/* cnt04 */
+div.cntWrap>.content.cnt04 div.texts h3{
+  font-size: 20px;
+}
+div.cntWrap>.content.cnt04 div.texts p{
+  font-size: 12px;
+  line-height: 20px;
+}
+div.cntWrap>.content.cnt04 div.artRight div.ovrGrid div.images .image{
+  height: 240px;
+}
+div.cntWrap>.content.cnt04 div.artRight div.ovrGrid{
+  width: calc((100vw - 700px) / 2 + 100%);
+  min-width: calc((100vw - 90vw) / 2 + 100%);
+}
+div.cntWrap>.content.cnt04 div.artLeft div.ovrGrid div.images .image{
+  height: 240px;
+}
+div.cntWrap>.content.cnt04 div.texts{
+  margin-top: 40px;
+}
+div.cntWrap>.content.cnt04 div.texts .btns{
+  width: 45%;
+}
+div.cntWrap>.content.cnt04 section{
+  margin-top: 40px;
+}
+
+/* bnr */
+.banner{
+  width: 90%;
+  max-width: 700px;
+}
+.banner{
+  margin-top: 40px;
+}
+.banner h4{
+  font-size: 20px;
+  padding-top: 60px;
+  width: calc(100% / 8 * 2);
+  margin-left: calc(100% / 8 * 1.4);
+}
+.banner p{
+  font-size: 12px;
+  line-height: 20px;
+  padding-top: 80px;
+  width: calc(100% / 8 * 3);
+}
+.banner div.image{
+  height: 200px;
+  width: calc(100% / 8);
+  margin-left: calc(100% / 8 * 0.2);
+}
+
+  /* footer */
+div.ftrWrap>div.footer{
+    width: 90%;
+    max-width: 700px;
+  }
+  div.ftrWrap{
+    margin-top: 40px;
+  }
+  
+  div.ftrWrap>div.footer>h1{
+    font-size: 30px;
+  }
+  div.ftrWrap>div.footer>h4{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  div.ftrWrap{
+    padding-bottom: 40px;
+  }

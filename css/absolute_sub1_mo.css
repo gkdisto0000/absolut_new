@@ -1,0 +1,233 @@
+/* 헤더 */
+div.hdrWrap>div.header>div.hdrLeft>h4{
+    display: none;
+}
+div.hdrWrap>div.header>div.hdrLeft>i{
+    line-height: 80px;
+    font-size: 30px;
+    font-weight: 700;
+}
+div.hdrWrap>div.header>div.middle{
+    width: calc(100% / 4 * 3);
+}
+div.hdrWrap>div.header>div.middle>h1{
+    width: 50%;
+}
+div.hdrWrap>div.header>div.middle>p{
+    width: calc(100%);
+    font-size: 14px;
+    margin-top: 0px;
+}
+div.hdrWrap>div.header>div.hdrRight{
+    display: none;
+}
+div.hdrWrap>div.header>div.hdrLeft{
+    height: 80px;
+    width: calc(100% / 4 * 0.5);
+}
+
+div.hdrWrap>div.header>div.middle>div.btn{
+    display: none;
+}
+
+div.hdrWrap>div.header>div.middle{
+    height: 120px;
+}
+
+/* 모바일 헤더 수정 */
+div.hdrWrap>div.header>div.hdrLeft1{
+    width: 0%;
+    height: 170px;
+}
+div.hdrWrap>div.header>div.hdrLeft1>ul>li{
+    font-size: 12px;
+    line-height: 30px;
+}
+div.hdrWrap>div.header>div.hdrLeft1>h4{
+    font-size: 11px;
+    padding-top: 10px;
+}
+div.hdrWrap>div.header>div.hdrLeft1>ul{
+    padding-top: 10px;
+}
+/* 메인 */
+div.mainWrap>div.main{
+    height: 200px;
+}
+div.mainWrap>div.main>div.texts>h2{
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 5px;
+}
+div.mainWrap>div.main>div.texts>p{
+    font-size: 10px;
+    line-height: 15px;
+    width: calc(100% / 4 * 2.2);
+    margin: 0 auto;
+    height: 50px;
+}
+div.mainWrap>div.main>div.texts{
+    padding-top: 40px;
+}
+div.mainWrap>div.main>div.texts>div.play>i{
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+}
+div.mainWrap>div.main>div.texts>div.play{
+    margin-top: 20px;
+}
+
+/* cnt common */
+div.cntWrap>div.content>div.header>h2{
+    font-size: 16px;
+}
+
+/* cnt01 */
+
+div.cntWrap>div.content.cnt01>div.section>div.article>div.images>div.image{
+    width: calc(100% / 9 - 10px);
+    height: 260px;
+    margin: 0 5px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.images>div.image:nth-last-child(1){
+    display: none;
+}
+
+div.cntWrap>div.content.cnt01>div.section>div.article>div.images{
+    width: 308%;
+    height: 280px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.arrow{
+    bottom: -120px;
+}
+
+div.cntWrap>div.content.cnt01>div.section>div.article>div.view>div.textsGroup>div.texts>div.txtLeft{
+    width: 100%;
+    text-align: center;
+    padding: 10px calc(100% / 8 * 0.5);
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.view{
+    height: 200px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.view>div.textsGroup>div.texts>div.txtLeft>h3{
+    font-size: 20px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.view>div.textsGroup>div.texts>div.txtLeft>h5{
+    font-size: 16px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.view>div.textsGroup>div.texts>div.txtLeft>p{
+    height: 80px;
+    overflow: hidden;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.btns>i{
+    color: #043e73;
+    text-shadow: 2px 2px 2px #000;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.btns>i:nth-child(1){
+    top: 25px;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.btns>i:nth-child(2){
+    top: 25px;
+}
+
+/* cnt02 */
+div.cntWrap>div.content.cnt02>div.header>div.images>div.image{
+    height: 200px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h3{
+    font-size: 16px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h4{
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.images>div.image.i5{
+    display: none;
+}
+
+div.cntWrap>div.content.cnt02>div.section>div.article>div.images>div.image.i6{
+    display: none;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.images{
+    width: 100%;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.images>div.image{
+    width: calc(100% / 4 - 10px);
+}
+div.cntWrap>div.content.cnt02>div.section{
+    margin-top: -80px;
+    height: 360px;
+}
+div.cntWrap>div.content.cnt02>div.section>div.article>div.texts{
+    padding-top: 120px;
+}
+
+/* banner */
+
+div.bnrWrap>div.banner>div.bnrTop>div.texts{
+    display: block;
+    text-align: center;
+}
+div.bnrWrap>div.banner>div.bnrTop>div.texts>h3>span:nth-child(1){
+    color: #043e73;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+}
+div.bnrWrap>div.banner>div.bnrTop>div.images{
+    margin-top: 40px;
+}
+div.bnrWrap>div.banner>div.bnrTop>div.texts>p{
+    font-size: 12px;
+    margin-top: 40px;
+}
+div.bnrWrap>div.banner>div.bnrMiddle>div.texts{
+    display: none;
+}
+div.bnrWrap>div.banner>div.bnrMiddle>div.texts>h3{
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-top: 80px;
+}
+
+div.bnrWrap>div.banner>div.bnrMiddle>div.texts>p{
+    font-size: 20px;
+    line-height: 30px;
+    width: calc(100% / 9 * 7);
+    margin: 0 auto;
+    margin-top: 40px;
+}
+div.bnrWrap>div.banner>div.bnrMiddle{
+    display: none;
+}
+div.bnrWrap>div.banner>div.bnrTop>div.images>div.image{
+    height: 160px;
+}
+div.bnrWrap>div.banner>div.bnrBtm>div.images{
+    margin-top: 40px;
+}
+div.bnrWrap>div.banner>div.bnrBtm>div.images>div.image{
+    height: 160px;
+}
+
+
+/* footer */
+div.ftrWrap>div.footer>h1{
+    font-size: 18px;
+    line-height: 20px;
+}
+div.ftrWrap>div.footer>h4{
+    font-size: 11px;
+    line-height: 20px;
+}
+div.ftrWrap>div.footer>div.email{
+    display: none;
+}
+div.ftrWrap{
+    margin-top: 60px;
+    padding-bottom: 40px;
+}

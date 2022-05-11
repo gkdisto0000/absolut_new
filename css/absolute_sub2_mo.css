@@ -1,0 +1,276 @@
+/* 헤더 */
+div.hdrWrap>div.header>div.hdrLeft>h4{
+    display: none;
+}
+div.hdrWrap>div.header>div.hdrLeft>i{
+    line-height: 80px;
+    font-size: 30px;
+    font-weight: 700;
+}
+div.hdrWrap>div.header>div.middle{
+    width: calc(100% / 4 * 3);
+}
+div.hdrWrap>div.header>div.middle>h1{
+    width: 50%;
+}
+div.hdrWrap>div.header>div.middle>p{
+    width: calc(100%);
+    font-size: 14px;
+    margin-top: 0px;
+}
+div.hdrWrap>div.header>div.hdrRight{
+    display: none;
+}
+div.hdrWrap>div.header>div.hdrLeft{
+    height: 80px;
+    width: calc(100% / 4 * 0.5);
+}
+
+div.hdrWrap>div.header>div.middle>div.btn{
+    display: none;
+}
+
+div.hdrWrap>div.header>div.middle{
+    height: 120px;
+}
+
+  /* 모바일 헤더 수정 */
+  div.hdrWrap>div.header>div.hdrLeft1{
+    width: 0%;
+    height: 170px;
+}
+div.hdrWrap>div.header>div.hdrLeft1>ul>li{
+    font-size: 12px;
+    line-height: 30px;
+}
+div.hdrWrap>div.header>div.hdrLeft1>h4{
+    font-size: 11px;
+    padding-top: 10px;
+}
+div.hdrWrap>div.header>div.hdrLeft1>ul{
+    padding-top: 10px;
+}
+
+/* 메인 */
+div.mainWrap>div.main>div.texts>h2{
+    padding-top: 80px;
+    font-size: 27px;
+    line-height: 30px;
+}
+div.mainWrap>div.main>div.texts>p{
+    font-size: 12px;
+    width: 100%;
+    margin-top: 0px;
+    opacity: 0.8;
+}
+div.mainWrap>div.main>div.texts>p::before{
+    display: none;
+}
+
+
+/* cnt common */
+div.cntWrap>div.content>div.header>h2{
+    font-size: 16px;
+}
+div.cntWrap>div.content>div.header>p{
+    font-size: 11px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+
+/* cnt01 */
+div.cntWrap>div.content.cnt01>div.header>p{
+    font-size: 11px;
+    width: 100%;
+    margin-top: 0px;
+}
+div.cntWrap>div.content.cnt01 .article .image{
+    background-image: url('../images/sub_2/sub02_cnt01_img01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    height: 160px;
+    width: calc(100% / 4 * 2);
+    float: left;
+}
+div.cntWrap>div.content.cnt01 .article .txtMiddle{
+    display: none;
+}
+div.cntWrap>div.content.cnt01 .article .texts h3{
+    font-size: 14px;
+    line-height: 30px;
+}
+div.cntWrap>div.content.cnt01 .article .texts p{
+    font-size: 10px;
+    line-height: 15px;
+    height: 45px;
+    overflow: hidden;
+}
+div.cntWrap>div.content.cnt01 .article .txtLeft{
+    width: calc(100% / 4 * 2);
+    text-align: left;
+    margin-top: 0px;
+}
+div.cntWrap>div.content.cnt01 .article .txtRight{
+    width: calc(100% / 4 * 2);
+    text-align: left;
+    margin-top: 0px;
+    margin-top: 10px;
+}
+
+/* bnr01 */
+.banner.bnr01{
+    height: 160px;
+}
+
+/* cnt02 */
+div.cntWrap>div.content.cnt02 .artTop .article{
+    height: 200px;
+}
+div.cntWrap>div.content.cnt02 .artTop .article .image{
+    height: 200px;
+    float: left;
+    width: 50%;
+}
+div.cntWrap>div.content.cnt02 .artTop .article::after{
+    display: block;
+    clear: both;
+    content: '';
+}
+div.cntWrap>div.content.cnt02 .artTop .article{
+    float: none;
+    width: 100%;
+}
+div.cntWrap>div.content.cnt02 .artTop .article .texts{
+    display: block;
+    float: left;
+    width: 50%;
+    border: 1px solid #555;
+    height: 200px;
+    text-align: center;
+}
+div.cntWrap>div.content.cnt02 .artTop .article .texts h3{
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 40px;
+}
+div.cntWrap>div.content.cnt02 .artTop .article .texts p{
+    font-size: 11px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+div.cntWrap>div.content.cnt02 .artTop .article{
+    margin: 0px;
+}
+div.cntWrap>div.content.cnt02 .artTop .article:nth-child(2){
+    margin-top: 20px;
+}
+
+/* cnt02 */
+
+div.cntWrap>div.content.cnt03>div.section{
+    width: 100%;
+}
+div.cntWrap>div.content.cnt02 .artBtm{
+    display: none;
+}
+
+/* cnt03 */
+div.cntWrap>div.content.cnt03{
+    margin-top: -40px;
+}
+div.cntWrap>div.content.cnt03 .header{
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+div.cntWrap>div.content.cnt03 h4{
+    font-size: 12px;
+    line-height: 40px;
+}
+div.cntWrap>div.content.cnt03>div.header>h2{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+}
+div.cntWrap>div.content.cnt03>div.header>h2>br{
+    display: none;
+}
+
+div.cntWrap>div.content.cnt03>div.header>p{
+    font-size: 12px;
+    text-align: center;
+    width: calc(50%);
+    margin: 0 auto;
+}
+
+div.cntWrap>div.content.cnt03>div.section>div.btns{
+    display: none;
+}
+div.cntWrap>div.content.cnt03>div.section{
+    width: 100%;
+    margin-top: 20px;
+}
+div.cntWrap>div.content.cnt03>div.section>div.artView{
+    width: 100%;
+    overflow: hidden;
+    height: 120px;
+    overflow: hidden;
+}
+div.cntWrap>div.content.cnt03>div.section>div.artView>div.artGroup{
+    width: 160%;
+}
+div.cntWrap>div.content.cnt03>div.section>div.artView>div.artGroup>div.article>div.image{
+    height: 120px;
+}
+div.cntWrap>div.content.cnt03>div.section>div.bars{
+    width: 100%;
+    margin: 0 auto;
+}
+div.cntWrap>div.content.cnt03>div.section>div.bars>div.bar{
+    width: 100%;
+    height: 5px;
+    margin-top: 3px;
+}
+div.cntWrap>div.content.cnt03>div.section>div.bars>p{
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+}
+
+/* bnr02 */
+div.bnrWrap.bnrWrap02>div.banner.bnr02{
+    padding: 40px;
+}
+div.bnrWrap.bnrWrap02>div.banner.bnr02>div.texts>h3{
+    font-size: 16px;
+    line-height: 40px;
+}
+div.bnrWrap.bnrWrap02>div.banner.bnr02>div.texts>p{
+    font-size: 12px;
+    line-height: 20px;
+}
+div.bnrWrap.bnrWrap02>div.banner.bnr02>div.texts>div.email{
+    display: none;
+}
+
+/* footer */
+div.ftrWrap>div.footer>h1{
+    font-size: 18px;
+    line-height: 20px;
+}
+div.ftrWrap>div.footer>h4{
+    font-size: 11px;
+    line-height: 20px;
+}
+div.ftrWrap>div.footer>div.email{
+    display: none;
+}
+div.ftrWrap{
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
