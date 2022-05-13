@@ -386,11 +386,11 @@ div.cntWrap>div.content.cnt01>div.section>div.article>div.view>div.textsGroup>di
 }
 div.cntWrap>div.content.cnt01>div.section>div.article>div.view>div.textsGroup>div.texts>div.txtRight>div.image{
   height: 320px;
-}
-div.cntWrap>div.content.cnt01>div.section>div.article>div.view>div.textsGroup>div.texts>div.txtRight>div.image.a1{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+div.cntWrap>div.content.cnt01>div.section>div.article>div.view>div.textsGroup>div.texts>div.txtRight>div.image.a1{
   background-image: url('../images/sub01_cnt01_btm_img01_1.jpg');
 }
 div.cntWrap>div.content.cnt01>div.section>div.article>div.view>div.textsGroup>div.texts>div.txtRight>div.image.a2{
