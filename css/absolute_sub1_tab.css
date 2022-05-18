@@ -122,6 +122,11 @@ div.cntWrap{
 
 
 /* cnt01 */
+
+div.cntWrap>div.content.cnt01>div.section>div.article>div.images>div.image{
+  height: 280px;
+}
+
 div.cntWrap>div.content.cnt01>div.section>div.article>div.images{
   height: 320px;
   margin-top: 40px;

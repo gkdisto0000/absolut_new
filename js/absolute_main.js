@@ -18,216 +18,123 @@ $(function(){
     // 모바일용 클릭
     var moleft = $('div.hdrWrap>div.header>div.hdrLeft>i');
     var wd = $(window).width();
+    
+    // 햄버거 타블렛바
+    var HRHeight = 0;
+    var HRHeCLose = 0;
+    var HRHeLeft = 0;
+
+    // cnt02 병 슬라이드 반응형
+    var cnt02Left = 0;
+
+    // bnr 슬라이드
+    var bnrLeft = 0;
+    var bnrB01 = 0;
+    var bnrB02 = 0;
+    var bnrB03 = 0;
+    var bnrB04 = 0;
+
 
     if(wd >= 1025){
 
-      h4.click(function(){
-        hdrRight.css({
-            marginTop: '-280'+'px'
-        });
-
-    });
-
-    // 닫기 버튼
-    close1.click(function(){
-        hdrRight.css({
-            marginTop: '-560'+'px'
-        });
-    });
-
-
-    menu.click(function(){
-        hdrLeft.css({
-            width: 'calc(100% / 12 * 3.5)'
-        });
-    });
-
-    // 닫기 버튼
-    close2.click(function(){
-        hdrLeft.css({
-            width: '0'
-        });
-    });
-
-    cnt2B.eq(1).click(function(){
-      i++;
-      cnt2B.eq(0).css('opacity','1');
-      if(i>2){
-        i=2;
-        $(this).css('opacity','0');
-      }
-      cnt2G.css({
-        marginLeft: i * -25 + '%' 
-      })
-      console.log(i);
-    });
-
-    cnt2B.eq(0).click(function(){
-      i--;
-      cnt2B.eq(1).css('opacity','1');
-      if(i<0){
-        i=0;
-        $(this).css('opacity','0');
-      }
-      cnt2G.css({
-        marginLeft: i * -25 + '%' 
-      })
-    });
-
+      // PC 햄버거 바
+      HRHeight = -280;
+      HRHeCLose = -560;
+      HRHeLeft = 'calc(100% / 12 * 3.5)';
+      cnt02Left = -25;
     
-    // 배너 버튼 레프트
-    bnr2Right.click(function(){
-      i++;
-      
-      if(i > 2) {
-        i = 2;
-      }
-      bnrG.css({
-        marginLeft: i * -24 + '%'
+      // 배너 버튼 레프트
+      bnr2Right.click(function(){
+        i++;
+        
+        if(i > 2) {
+          i = 2;
+        }
+        bnrG.css({
+          marginLeft: i * -24 + '%'
+        });
+  
+        if(i == 1){
+          blue.css({
+            width: 66.666 + '%',
+          })
+        } else if (i == 2) {
+          blue.css({
+            width: 100 + '%',
+          })
+        }
       });
-
-
-      if(i == 1){
-        blue.css({
-          width: 66.666 + '%',
-        })
-      } else if (i == 2) {
-        blue.css({
-          width: 100 + '%',
-        })
-      }
-
-    });
-
-
-    bnr2Left.click(function(){
-      i--;
-      
-      if(i < 0) {
-        i = 0;
-      }
-
-      bnrG.css({
-        marginLeft: i * -24 + '%'
+  
+      bnr2Left.click(function(){
+        i--;
+        if(i < 0) {
+          i = 0;
+        }
+        bnrG.css({
+          marginLeft: i * -24 + '%'
+        });
+        if(i == 1){
+          blue.css({
+            width: i * 66.666 + '%',
+          })
+        } else if (i == 0) {
+          blue.css({
+            width: 33.333 + '%',
+          })
+        }
       });
-
-      if(i == 1){
-        blue.css({
-          width: i * 66.666 + '%',
-        })
-      } else if (i == 0) {
-        blue.css({
-          width: 33.333 + '%',
-        })
-      }
-    });
 
     } else if(wd >= 420 && wd <= 1025){
 
-      // 타블렛 햄버거 바
+        // Tablet 햄버거 바
+        HRHeight = -200;
+        HRHeCLose = -480;
+        HRHeLeft = 'calc(100% / 8 * 2.8)';
+        cnt02Left = -25;
 
-      h4.click(function(){
-        hdrRight.css({
-            marginTop: '-200'+'px'
+              // 배너 버튼 레프트
+      bnr2Right.click(function(){
+        i++;
+        
+        if(i > 2) {
+          i = 2;
+        }
+        bnrG.css({
+          marginLeft: i * -24 + '%'
         });
-
-    });
-
-    // 닫기 버튼
-    close1.click(function(){
-        hdrRight.css({
-            marginTop: '-480'+'px'
+  
+  
+        if(i == 1){
+          blue.css({
+            width: 66.666 + '%',
+          })
+        } else if (i == 2) {
+          blue.css({
+            width: 100 + '%',
+          })
+        }
+      });
+  
+      bnr2Left.click(function(){
+        i--;
+        
+        if(i < 0) {
+          i = 0;
+        }
+        bnrG.css({
+          marginLeft: i * -24 + '%'
         });
-    });
-
-
-    menu.click(function(){
-        hdrLeft.css({
-            width: 'calc(100% / 8 * 2.8)'
-        });
-    });
-
-    // 닫기 버튼
-    close2.click(function(){
-        hdrLeft.css({
-            width: '0'
-        });
-    });
-
-    cnt2B.eq(1).click(function(){
-      i++;
-      cnt2B.eq(0).css('opacity','1');
-      if(i>2){
-        i=2;
-        $(this).css('opacity','0');
-      }
-      cnt2G.css({
-        marginLeft: i * -25 + '%' 
-        // marginLeft: i * -22 + '%' 
-      })
-      console.log(i);
-    });
-
-    cnt2B.eq(0).click(function(){
-      i--;
-      cnt2B.eq(1).css('opacity','1');
-      if(i<0){
-        i=0;
-        $(this).css('opacity','0');
-      }
-      cnt2G.css({
-        marginLeft: i * -25 + '%' 
-        // marginLeft: i * -22 + '%' 
-      })
-    });
-
+        if(i == 1){
+          blue.css({
+            width: i * 66.666 + '%',
+          })
+        } else if (i == 0) {
+          blue.css({
+            width: 33.333 + '%',
+          })
+        }
+      });
     
-    // 배너 버튼 레프트
-    bnr2Right.click(function(){
-      i++;
-      
-      if(i > 2) {
-        i = 2;
-      }
-      bnrG.css({
-        marginLeft: i * -24 + '%'
-      });
-
-
-      if(i == 1){
-        blue.css({
-          width: 66.666 + '%',
-        })
-      } else if (i == 2) {
-        blue.css({
-          width: 100 + '%',
-        })
-      }
-
-    });
-
-    bnr2Left.click(function(){
-      i--;
-      
-      if(i < 0) {
-        i = 0;
-      }
-
-      bnrG.css({
-        marginLeft: i * -24 + '%'
-      });
-
-      if(i == 1){
-        blue.css({
-          width: i * 66.666 + '%',
-        })
-      } else if (i == 0) {
-        blue.css({
-          width: 33.333 + '%',
-        })
-      }
-    });
-
     } else {
       // 헤더  
       moleft.click(function(){
@@ -243,31 +150,7 @@ $(function(){
         });
     });
 
-    cnt2B.eq(1).click(function(){
-      i++;
-      cnt2B.eq(0).css('opacity','1');
-      if(i>2){
-        i=2;
-        $(this).css('opacity','0');
-      }
-      cnt2G.css({
-        marginLeft: i * -32 + '%' 
-      })
-      console.log(i);
-    });
-
-    cnt2B.eq(0).click(function(){
-      i--;
-      cnt2B.eq(1).css('opacity','1');
-      if(i<0){
-        i=0;
-        $(this).css('opacity','0');
-      }
-      cnt2G.css({
-        marginLeft: i * -32 + '%' 
-      })
-    });
-
+    cnt02Left = -32;
     
     // 배너 버튼 레프트
     bnr2Right.click(function(){
@@ -336,5 +219,63 @@ $(function(){
       } 
     });
     }
+
+
+  // 햄버거바 액션
+  // PC 햄버거 바
+    h4.click(function(){
+      hdrRight.css({
+          marginTop: HRHeight+'px'
+      });
+
+  });
+
+  // 닫기 버튼
+  close1.click(function(){
+      hdrRight.css({
+          marginTop: HRHeCLose+'px'
+      });
+  });
+
+
+  menu.click(function(){
+      hdrLeft.css({
+          width: HRHeLeft
+      });
+  });
+
+  // 닫기 버튼
+  close2.click(function(){
+      hdrLeft.css({
+          width: '0'
+      });
+  });
+
+
+  // cnt02 병 슬라이드
+  cnt2B.eq(1).click(function(){
+    i++;
+    cnt2B.eq(0).css('opacity','1');
+    if(i>2){
+      i=2;
+      $(this).css('opacity','0');
+    }
+    cnt2G.css({
+      marginLeft: i * cnt02Left + '%' 
+    })
+  });
+
+  cnt2B.eq(0).click(function(){
+    i--;
+    cnt2B.eq(1).css('opacity','1');
+    if(i<0){
+      i=0;
+      $(this).css('opacity','0');
+    }
+    cnt2G.css({
+      marginLeft: i * cnt02Left + '%' 
+    })
+  });
+
     // 제이쿼리 마침
 });

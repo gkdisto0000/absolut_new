@@ -12,71 +12,24 @@ $(function(){
     var moleft = $('div.hdrWrap>div.header>div.hdrLeft>i');
     var wd = $(window).width();
 
+    // 햄버거 타블렛바
+    var HRHeight = 0;
+    var HRHeCLose = 0;
+    var HRHeLeft = 0;
+
+
     if(wd >= 1025){
+        // PC 햄버거 바
+        HRHeight = -280;
+        HRHeCLose = -560;
+        HRHeLeft = 'calc(100% / 12 * 3.5)';
 
-        h4.click(function(){
-          hdrRight.css({
-              marginTop: '-280'+'px'
-          });
-  
-      });
-  
-      // 닫기 버튼
-      close1.click(function(){
-          hdrRight.css({
-              marginTop: '-560'+'px'
-          });
-      });
-  
-  
-      menu.click(function(){
-          hdrLeft.css({
-              width: 'calc(100% / 12 * 3.5)'
-          });
-      });
-  
-      // 닫기 버튼
-      close2.click(function(){
-          hdrLeft.css({
-              width: '0'
-          });
-      });
-  
-
-          
       } else if(wd >= 420 && wd <= 1025){
-
-        // 타블렛 햄버거 바
-
-        h4.click(function(){
-          hdrRight.css({
-              marginTop: '-200'+'px'
-          });
+        // Tablet 햄버거 바
+        HRHeight = -200;
+        HRHeCLose = -480;
+        HRHeLeft = 'calc(100% / 8 * 2.8)';
   
-      });
-  
-      // 닫기 버튼
-      close1.click(function(){
-          hdrRight.css({
-              marginTop: '-480'+'px'
-          });
-      });
-  
-  
-      menu.click(function(){
-          hdrLeft.css({
-              width: 'calc(100% / 8 * 2.8)'
-          });
-      });
-  
-      // 닫기 버튼
-      close2.click(function(){
-          hdrLeft.css({
-              width: '0'
-          });
-      });
-  
-          
       } else {
         // 헤더  
         moleft.click(function(){
@@ -133,6 +86,38 @@ $(function(){
                     }
               });
       }
+
+
+    // 햄버거바 액션
+    // PC 햄버거 바
+    h4.click(function(){
+        hdrRight.css({
+            marginTop: HRHeight+'px'
+        });
+
+    });
+
+    // 닫기 버튼
+    close1.click(function(){
+        hdrRight.css({
+            marginTop: HRHeCLose+'px'
+        });
+    });
+
+
+    menu.click(function(){
+        hdrLeft.css({
+            width: HRHeLeft
+        });
+    });
+
+    // 닫기 버튼
+    close2.click(function(){
+        hdrLeft.css({
+            width: '0'
+        });
+    });
+
 
 
     // cnt02 액션
