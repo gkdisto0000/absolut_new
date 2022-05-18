@@ -44,6 +44,11 @@ $(function(){
       cnt02Left = -25;
     
       // 배너 버튼 레프트
+
+      blue.css({
+        width: 33.333 + '%',
+      });
+
       bnr2Right.click(function(){
         i++;
         
@@ -92,7 +97,12 @@ $(function(){
         HRHeLeft = 'calc(100% / 8 * 2.8)';
         cnt02Left = -25;
 
-              // 배너 버튼 레프트
+        // 배너 버튼 레프트
+
+        blue.css({
+        width: 33.333 + '%',
+        });
+        
       bnr2Right.click(function(){
         i++;
         
@@ -153,6 +163,10 @@ $(function(){
     cnt02Left = -32;
     
     // 배너 버튼 레프트
+    blue.css({
+      width: 0 + '%',
+      });
+
     bnr2Right.click(function(){
       i++;
       
