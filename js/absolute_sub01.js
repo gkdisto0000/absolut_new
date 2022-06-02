@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
 
 
   var h4 = $('div.hdrWrap>div.header>div.hdrRight>h4');
@@ -10,7 +10,7 @@ $(function(){
 
   // 모바일용 클릭
   var moleft = $('div.hdrWrap>div.header>div.hdrLeft>i');
-  
+
   // 컨텐츠 1
   var cntbtn1 = $('div.cntWrap>div.content.cnt01>div.section>div.article>div.btns>i').first();
   var cntbtn2 = $('div.cntWrap>div.content.cnt01>div.section>div.article>div.btns>i').last();
@@ -21,321 +21,319 @@ $(function(){
   var texts = $('div.cntWrap>div.content.cnt01>div.section>div.article>div.texts');
   var cnt1Image2 = $('div.cntWrap>div.content.cnt01>div.section>div.article>div.view>div.textsGroup');
 
-
   // 햄버거 타블렛바
   var HRHeight = 0;
   var HRHeCLose = 0;
   var HRHeLeft = 0;
 
-
   var wd = $(window).width();
   var i = 0;
 
-      if(wd >= 1025){
+  if (wd >= 1025) {
 
-      // PC 햄버거 바
-      HRHeight = -280;
-      HRHeCLose = -560;
-      HRHeLeft = 'calc(100% / 12 * 3.5)';
+    // PC 햄버거 바
+    HRHeight = -280;
+    HRHeCLose = -560;
+    HRHeLeft = 'calc(100% / 12 * 3.5)';
 
-      // 초기세팅
-      cnt1Group.css({
-        marginLeft: -19.7 +'%'
-      });
+    // 초기세팅
+    cnt1Group.css({
+      marginLeft: -19.7 + '%'
+    });
 
-      cnt1Image2.css({
-        marginLeft: -100 + '%'
-      });
+    cnt1Image2.css({
+      marginLeft: -100 + '%'
+    });
 
-      cnt1Group.find('.image').eq(3).css({
-        filter: 'grayscale(0)',
-        height: '320px'
-      });
+    cnt1Group.find('.image').eq(3).css({
+      filter: 'grayscale(0)',
+      height: '320px'
+    });
 
-      cntbtn2.click(function(){
-        cnt1Group.stop().animate({
-          marginLeft: -39.4 +'%'
-        }, 500, function(){
-          cnt1Group.find('.image:first').appendTo(cnt1Group);
-          cnt1Group.css({
-            marginLeft: -19.7 +'%'
-          });
-          cnt1Group.find('.image').css({
-            filter: 'grayscale(1)',
-            height: '300px'
-          });
-          cnt1Group.find('.image').eq(3).css({
-            filter: 'grayscale(0)',
-            height: '320px'
-          });
+    cntbtn2.click(function () {
+      cnt1Group.stop().animate({
+        marginLeft: -39.4 + '%'
+      }, 500, function () {
+        cnt1Group.find('.image:first').appendTo(cnt1Group);
+        cnt1Group.css({
+          marginLeft: -19.7 + '%'
         });
-
-        cnt1Image2.stop().animate({
-          marginLeft: -200 +'%'
-        }, 500, function(){
-          cnt1Image2.find('.texts:first').appendTo(cnt1Image2);
-          cnt1Image2.css({
-            marginLeft: -100 + '%'
-          });
+        cnt1Group.find('.image').css({
+          filter: 'grayscale(1)',
+          height: '300px'
         });
-
+        cnt1Group.find('.image').eq(3).css({
+          filter: 'grayscale(0)',
+          height: '320px'
+        });
       });
 
-      cntbtn1.click(function(){
-        cnt1Group.stop().animate({
-          marginLeft: 0
-        }, 500, function(){
-          cnt1Group.find('.image:last').prependTo(cnt1Group);
-          cnt1Group.css({
-            marginLeft: -19.7 +'%'
-          });
-          cnt1Group.find('.image').css({
-            filter: 'grayscale(1)',
-            height: '300px'
-          });
-          cnt1Group.find('.image').eq(3).css({
-            filter: 'grayscale(0)',
-            height: '320px'
-          });
+      cnt1Image2.stop().animate({
+        marginLeft: -200 + '%'
+      }, 500, function () {
+        cnt1Image2.find('.texts:first').appendTo(cnt1Image2);
+        cnt1Image2.css({
+          marginLeft: -100 + '%'
         });
+      });
 
+    });
 
-        cnt1Image2.stop().animate({
-          marginLeft: 0 +'%'
-        }, 500, function(){
-          cnt1Image2.find('.texts:last').prependTo(cnt1Image2);
-          cnt1Image2.css({
-            marginLeft: -100 + '%'
-          });
+    cntbtn1.click(function () {
+      cnt1Group.stop().animate({
+        marginLeft: 0
+      }, 500, function () {
+        cnt1Group.find('.image:last').prependTo(cnt1Group);
+        cnt1Group.css({
+          marginLeft: -19.7 + '%'
         });
-
+        cnt1Group.find('.image').css({
+          filter: 'grayscale(1)',
+          height: '300px'
+        });
+        cnt1Group.find('.image').eq(3).css({
+          filter: 'grayscale(0)',
+          height: '320px'
+        });
       });
 
 
-        
-    } else if(wd >= 420 && wd <= 1025){
-
-      // Tablet 햄버거 바
-      HRHeight = -200;
-      HRHeCLose = -480;
-      HRHeLeft = 'calc(100% / 8 * 2.8)';
-
-      // 초기세팅
-      cnt1Group.css({
-        marginLeft: -20 +'%'
+      cnt1Image2.stop().animate({
+        marginLeft: 0 + '%'
+      }, 500, function () {
+        cnt1Image2.find('.texts:last').prependTo(cnt1Image2);
+        cnt1Image2.css({
+          marginLeft: -100 + '%'
+        });
       });
 
-      cnt1Image2.css({
-        marginLeft: -100 + '%'
+    });
+
+
+
+  } else if (wd >= 420 && wd <= 1025) {
+
+    // Tablet 햄버거 바
+    HRHeight = -200;
+    HRHeCLose = -480;
+    HRHeLeft = 'calc(100% / 8 * 2.8)';
+
+    // 초기세팅
+    cnt1Group.css({
+      marginLeft: -20 + '%'
+    });
+
+    cnt1Image2.css({
+      marginLeft: -100 + '%'
+    });
+
+    cnt1Group.find('.image').eq(3).css({
+      filter: 'grayscale(0)',
+      height: '300px'
+    });
+
+
+    cntbtn2.click(function () {
+      cnt1Group.stop().animate({
+        marginLeft: -40 + '%'
+      }, 500, function () {
+        cnt1Group.find('.image:first').appendTo(cnt1Group);
+        cnt1Group.css({
+          marginLeft: -20 + '%'
+        });
+        cnt1Group.find('.image').css({
+          filter: 'grayscale(1)',
+          height: '280px'
+        });
+        cnt1Group.find('.image').eq(3).css({
+          filter: 'grayscale(0)',
+          height: '300px'
+        });
       });
 
-      cnt1Group.find('.image').eq(3).css({
-        filter: 'grayscale(0)',
-        height: '300px'
+      cnt1Image2.stop().animate({
+        marginLeft: -200 + '%'
+      }, 500, function () {
+        cnt1Image2.find('.texts:first').appendTo(cnt1Image2);
+        cnt1Image2.css({
+          marginLeft: -100 + '%'
+        });
+      });
+
+    });
+
+    cntbtn1.click(function () {
+      cnt1Group.stop().animate({
+        marginLeft: 0
+      }, 500, function () {
+        cnt1Group.find('.image:last').prependTo(cnt1Group);
+        cnt1Group.css({
+          marginLeft: -20 + '%'
+        });
+        cnt1Group.find('.image').css({
+          filter: 'grayscale(1)',
+          height: '280px'
+        });
+        cnt1Group.find('.image').eq(3).css({
+          filter: 'grayscale(0)',
+          height: '300px'
+        });
       });
 
 
-      cntbtn2.click(function(){
-        cnt1Group.stop().animate({
-          marginLeft: -40 +'%'
-        }, 500, function(){
-          cnt1Group.find('.image:first').appendTo(cnt1Group);
-          cnt1Group.css({
-            marginLeft: -20 +'%'
-          });
-          cnt1Group.find('.image').css({
-            filter: 'grayscale(1)',
-            height: '280px'
-          });
-          cnt1Group.find('.image').eq(3).css({
-            filter: 'grayscale(0)',
-            height: '300px'
-          });
+      cnt1Image2.stop().animate({
+        marginLeft: 0 + '%'
+      }, 500, function () {
+        cnt1Image2.find('.texts:last').prependTo(cnt1Image2);
+        cnt1Image2.css({
+          marginLeft: -100 + '%'
         });
-
-        cnt1Image2.stop().animate({
-          marginLeft: -200 +'%'
-        }, 500, function(){
-          cnt1Image2.find('.texts:first').appendTo(cnt1Image2);
-          cnt1Image2.css({
-            marginLeft: -100 + '%'
-          });
-        });
-
       });
 
-      cntbtn1.click(function(){
-        cnt1Group.stop().animate({
-          marginLeft: 0
-        }, 500, function(){
-          cnt1Group.find('.image:last').prependTo(cnt1Group);
-          cnt1Group.css({
-            marginLeft: -20 +'%'
-          });
-          cnt1Group.find('.image').css({
-            filter: 'grayscale(1)',
-            height: '280px'
-          });
-          cnt1Group.find('.image').eq(3).css({
-            filter: 'grayscale(0)',
-            height: '300px'
-          });
+    });
+  } else {
+    // 초기세팅
+    cnt1Group.css({
+      marginLeft: -34.5 + '%'
+    });
+
+    cnt1Image2.css({
+      marginLeft: -100 + '%'
+    });
+
+    cnt1Group.find('.image').eq(2).css({
+      filter: 'grayscale(0)',
+      height: '280px'
+    });
+
+    cntbtn2.click(function () {
+      cnt1Group.stop().animate({
+        marginLeft: -69 + '%'
+      }, 500, function () {
+        cnt1Group.find('.image:first').appendTo(cnt1Group);
+        cnt1Group.css({
+          marginLeft: -34.5 + '%'
         });
-
-
-        cnt1Image2.stop().animate({
-          marginLeft: 0 +'%'
-        }, 500, function(){
-          cnt1Image2.find('.texts:last').prependTo(cnt1Image2);
-          cnt1Image2.css({
-            marginLeft: -100 + '%'
-          });
+        cnt1Group.find('.image').css({
+          filter: 'grayscale(1)',
+          height: '260px'
         });
-
-      });          
-    } else {
-      // 초기세팅
-      cnt1Group.css({
-        marginLeft: -34.5 +'%'
+        cnt1Group.find('.image').eq(2).css({
+          filter: 'grayscale(0)',
+          height: '280px'
+        });
       });
 
-      cnt1Image2.css({
-        marginLeft: -100 + '%'
+      cnt1Image2.stop().animate({
+        marginLeft: -200 + '%'
+      }, 500, function () {
+        cnt1Image2.find('.texts:first').appendTo(cnt1Image2);
+        cnt1Image2.css({
+          marginLeft: -100 + '%'
+        });
       });
 
-      cnt1Group.find('.image').eq(2).css({
-        filter: 'grayscale(0)',
-        height: '280px'
+    });
+
+    cntbtn1.click(function () {
+      cnt1Group.stop().animate({
+        marginLeft: 0
+      }, 500, function () {
+        cnt1Group.find('.image:last').prependTo(cnt1Group);
+        cnt1Group.css({
+          marginLeft: -34.5 + '%'
+        });
+        cnt1Group.find('.image').css({
+          filter: 'grayscale(1)',
+          height: '260px'
+        });
+        cnt1Group.find('.image').eq(2).css({
+          filter: 'grayscale(0)',
+          height: '280px'
+        });
       });
 
-      cntbtn2.click(function(){
-        cnt1Group.stop().animate({
-          marginLeft: -69 +'%'
-        }, 500, function(){
-          cnt1Group.find('.image:first').appendTo(cnt1Group);
-          cnt1Group.css({
-            marginLeft: -34.5 +'%'
-          });
-          cnt1Group.find('.image').css({
-            filter: 'grayscale(1)',
-            height: '260px'
-          });
-          cnt1Group.find('.image').eq(2).css({
-            filter: 'grayscale(0)',
-            height: '280px'
-          });
+      cnt1Image2.stop().animate({
+        marginLeft: 0 + '%'
+      }, 500, function () {
+        cnt1Image2.find('.texts:last').prependTo(cnt1Image2);
+        cnt1Image2.css({
+          marginLeft: -100 + '%'
         });
-
-        cnt1Image2.stop().animate({
-          marginLeft: -200 +'%'
-        }, 500, function(){
-          cnt1Image2.find('.texts:first').appendTo(cnt1Image2);
-          cnt1Image2.css({
-            marginLeft: -100 + '%'
-          });
-        });
-
       });
 
-      cntbtn1.click(function(){
-        cnt1Group.stop().animate({
-          marginLeft: 0
-        }, 500, function(){
-          cnt1Group.find('.image:last').prependTo(cnt1Group);
-          cnt1Group.css({
-            marginLeft: -34.5 +'%'
-          });
-          cnt1Group.find('.image').css({
-            filter: 'grayscale(1)',
-            height: '260px'
-          });
-          cnt1Group.find('.image').eq(2).css({
-            filter: 'grayscale(0)',
-            height: '280px'
-          });
-        });
+    });
 
-        cnt1Image2.stop().animate({
-          marginLeft: 0 +'%'
-        }, 500, function(){
-          cnt1Image2.find('.texts:last').prependTo(cnt1Image2);
-          cnt1Image2.css({
-            marginLeft: -100 + '%'
-          });
-        });
-
+    // 헤더  
+    moleft.click(function () {
+      hdrLeft.css({
+        width: '50%'
       });
-
-      // 헤더  
-      moleft.click(function(){
-        hdrLeft.css({
-            width: '50%'
-        });
     });
 
     // 닫기 버튼
-    close2.click(function(){
-        hdrLeft.css({
-            width: '0'
-        });
-    });
-    }
-
-// 햄버거바 액션
-// PC 햄버거 바
-  h4.click(function(){
-    hdrRight.css({
-        marginTop: HRHeight+'px'
-    });
-
-});
-
-// 닫기 버튼
-close1.click(function(){
-    hdrRight.css({
-        marginTop: HRHeCLose+'px'
-    });
-});
-
-
-menu.click(function(){
-    hdrLeft.css({
-        width: HRHeLeft
-    });
-});
-
-// 닫기 버튼
-close2.click(function(){
-    hdrLeft.css({
+    close2.click(function () {
+      hdrLeft.css({
         width: '0'
+      });
     });
-});
+  }
+
+  // 햄버거바 액션
+  // PC 햄버거 바
+  h4.click(function () {
+    hdrRight.css({
+      marginTop: HRHeight + 'px'
+    });
+
+  });
+
+  // 닫기 버튼
+  close1.click(function () {
+    hdrRight.css({
+      marginTop: HRHeCLose + 'px'
+    });
+  });
+
+
+  menu.click(function () {
+    hdrLeft.css({
+      width: HRHeLeft
+    });
+  });
+
+  // 닫기 버튼
+  close2.click(function () {
+    hdrLeft.css({
+      width: '0'
+    });
+  });
 
   // 원형 클릭
   var circle = $('div.cntWrap > div.content.cnt02 > div.section > div.article > div.images > div.image');
   var h3 = $('div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h3');
 
-  circle.eq(0).click(function(){
+  circle.eq(0).click(function () {
     h3.text('"ABSOLUT CITRON1의 맛은 어떤가요?"');
   });
 
-  circle.eq(1).click(function(){
+  circle.eq(1).click(function () {
     h3.text('"ABSOLUT CITRON2의 맛은 어떤가요?"');
   });
 
-  circle.eq(2).click(function(){
+  circle.eq(2).click(function () {
     h3.text('"ABSOLUT CITRON3의 맛은 어떤가요?"');
   });
 
-  circle.eq(3).click(function(){
+  circle.eq(3).click(function () {
     h3.text('"ABSOLUT CITRON4의 맛은 어떤가요?"');
   });
 
-  circle.eq(4).click(function(){
+  circle.eq(4).click(function () {
     h3.text('"ABSOLUT CITRON5의 맛은 어떤가요?"');
   });
 
-  circle.eq(5).click(function(){
+  circle.eq(5).click(function () {
     h3.text('"ABSOLUT CITRON6의 맛은 어떤가요?"');
   });
 
