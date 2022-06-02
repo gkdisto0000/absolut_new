@@ -29,86 +29,25 @@ $(function () {
   var wd = $(window).width();
   var i = 0;
 
-  if (wd >= 1025) {
+  // cnt01 무한루프 슬라이드
+  var cnt01MaginLeft01 = 0;
+  var cnt01EQ3 = 0;
+  var cnt01EQ = 0;
+  var cnt01MaginLeft02 = 0;
+  var cnt01MoEq = 0;
 
+  if (wd >= 1025) {
     // PC 햄버거 바
     HRHeight = -280;
     HRHeCLose = -560;
     HRHeLeft = 'calc(100% / 12 * 3.5)';
 
-    // 초기세팅
-    cnt1Group.css({
-      marginLeft: -19.7 + '%'
-    });
-
-    cnt1Image2.css({
-      marginLeft: -100 + '%'
-    });
-
-    cnt1Group.find('.image').eq(3).css({
-      filter: 'grayscale(0)',
-      height: '320px'
-    });
-
-    cntbtn2.click(function () {
-      cnt1Group.stop().animate({
-        marginLeft: -39.4 + '%'
-      }, 500, function () {
-        cnt1Group.find('.image:first').appendTo(cnt1Group);
-        cnt1Group.css({
-          marginLeft: -19.7 + '%'
-        });
-        cnt1Group.find('.image').css({
-          filter: 'grayscale(1)',
-          height: '300px'
-        });
-        cnt1Group.find('.image').eq(3).css({
-          filter: 'grayscale(0)',
-          height: '320px'
-        });
-      });
-
-      cnt1Image2.stop().animate({
-        marginLeft: -200 + '%'
-      }, 500, function () {
-        cnt1Image2.find('.texts:first').appendTo(cnt1Image2);
-        cnt1Image2.css({
-          marginLeft: -100 + '%'
-        });
-      });
-
-    });
-
-    cntbtn1.click(function () {
-      cnt1Group.stop().animate({
-        marginLeft: 0
-      }, 500, function () {
-        cnt1Group.find('.image:last').prependTo(cnt1Group);
-        cnt1Group.css({
-          marginLeft: -19.7 + '%'
-        });
-        cnt1Group.find('.image').css({
-          filter: 'grayscale(1)',
-          height: '300px'
-        });
-        cnt1Group.find('.image').eq(3).css({
-          filter: 'grayscale(0)',
-          height: '320px'
-        });
-      });
-
-
-      cnt1Image2.stop().animate({
-        marginLeft: 0 + '%'
-      }, 500, function () {
-        cnt1Image2.find('.texts:last').prependTo(cnt1Image2);
-        cnt1Image2.css({
-          marginLeft: -100 + '%'
-        });
-      });
-
-    });
-
+    // cnt01
+    cnt01MaginLeft01 = -19.7;
+    cnt01EQ3 = '320px';
+    cnt01EQ = '300px';
+    cnt01MaginLeft02 = -39.4
+    cnt01MoEq = 3;
 
 
   } else if (wd >= 420 && wd <= 1025) {
@@ -118,151 +57,21 @@ $(function () {
     HRHeCLose = -480;
     HRHeLeft = 'calc(100% / 8 * 2.8)';
 
-    // 초기세팅
-    cnt1Group.css({
-      marginLeft: -20 + '%'
-    });
-
-    cnt1Image2.css({
-      marginLeft: -100 + '%'
-    });
-
-    cnt1Group.find('.image').eq(3).css({
-      filter: 'grayscale(0)',
-      height: '300px'
-    });
+    // cnt01
+    cnt01MaginLeft01 = -20;
+    cnt01EQ3 = '300px';
+    cnt01EQ = '280px';
+    cnt01MaginLeft02 = -40
+    cnt01MoEq = 3;
 
 
-    cntbtn2.click(function () {
-      cnt1Group.stop().animate({
-        marginLeft: -40 + '%'
-      }, 500, function () {
-        cnt1Group.find('.image:first').appendTo(cnt1Group);
-        cnt1Group.css({
-          marginLeft: -20 + '%'
-        });
-        cnt1Group.find('.image').css({
-          filter: 'grayscale(1)',
-          height: '280px'
-        });
-        cnt1Group.find('.image').eq(3).css({
-          filter: 'grayscale(0)',
-          height: '300px'
-        });
-      });
-
-      cnt1Image2.stop().animate({
-        marginLeft: -200 + '%'
-      }, 500, function () {
-        cnt1Image2.find('.texts:first').appendTo(cnt1Image2);
-        cnt1Image2.css({
-          marginLeft: -100 + '%'
-        });
-      });
-
-    });
-
-    cntbtn1.click(function () {
-      cnt1Group.stop().animate({
-        marginLeft: 0
-      }, 500, function () {
-        cnt1Group.find('.image:last').prependTo(cnt1Group);
-        cnt1Group.css({
-          marginLeft: -20 + '%'
-        });
-        cnt1Group.find('.image').css({
-          filter: 'grayscale(1)',
-          height: '280px'
-        });
-        cnt1Group.find('.image').eq(3).css({
-          filter: 'grayscale(0)',
-          height: '300px'
-        });
-      });
-
-
-      cnt1Image2.stop().animate({
-        marginLeft: 0 + '%'
-      }, 500, function () {
-        cnt1Image2.find('.texts:last').prependTo(cnt1Image2);
-        cnt1Image2.css({
-          marginLeft: -100 + '%'
-        });
-      });
-
-    });
   } else {
-    // 초기세팅
-    cnt1Group.css({
-      marginLeft: -34.5 + '%'
-    });
-
-    cnt1Image2.css({
-      marginLeft: -100 + '%'
-    });
-
-    cnt1Group.find('.image').eq(2).css({
-      filter: 'grayscale(0)',
-      height: '280px'
-    });
-
-    cntbtn2.click(function () {
-      cnt1Group.stop().animate({
-        marginLeft: -69 + '%'
-      }, 500, function () {
-        cnt1Group.find('.image:first').appendTo(cnt1Group);
-        cnt1Group.css({
-          marginLeft: -34.5 + '%'
-        });
-        cnt1Group.find('.image').css({
-          filter: 'grayscale(1)',
-          height: '260px'
-        });
-        cnt1Group.find('.image').eq(2).css({
-          filter: 'grayscale(0)',
-          height: '280px'
-        });
-      });
-
-      cnt1Image2.stop().animate({
-        marginLeft: -200 + '%'
-      }, 500, function () {
-        cnt1Image2.find('.texts:first').appendTo(cnt1Image2);
-        cnt1Image2.css({
-          marginLeft: -100 + '%'
-        });
-      });
-
-    });
-
-    cntbtn1.click(function () {
-      cnt1Group.stop().animate({
-        marginLeft: 0
-      }, 500, function () {
-        cnt1Group.find('.image:last').prependTo(cnt1Group);
-        cnt1Group.css({
-          marginLeft: -34.5 + '%'
-        });
-        cnt1Group.find('.image').css({
-          filter: 'grayscale(1)',
-          height: '260px'
-        });
-        cnt1Group.find('.image').eq(2).css({
-          filter: 'grayscale(0)',
-          height: '280px'
-        });
-      });
-
-      cnt1Image2.stop().animate({
-        marginLeft: 0 + '%'
-      }, 500, function () {
-        cnt1Image2.find('.texts:last').prependTo(cnt1Image2);
-        cnt1Image2.css({
-          marginLeft: -100 + '%'
-        });
-      });
-
-    });
+    // cnt01
+    cnt01MaginLeft01 = -34.5;
+    cnt01EQ3 = '280px';
+    cnt01EQ = '260px';
+    cnt01MaginLeft02 = -69
+    cnt01MoEq = 2;
 
     // 헤더  
     moleft.click(function () {
@@ -309,7 +118,74 @@ $(function () {
     });
   });
 
-  // 원형 클릭
+  //cnt01 무한루프 슬라이드 
+  // 초기세팅
+  cnt1Group.css({
+    marginLeft: cnt01MaginLeft01 + '%'
+  });
+  cnt1Image2.css({
+    marginLeft: -100 + '%'
+  });
+  cnt1Group.find('.image').eq(cnt01MoEq).css({
+    filter: 'grayscale(0)',
+    height: cnt01EQ3
+  });
+  cntbtn2.click(function () {
+    cnt1Group.stop().animate({
+      marginLeft: cnt01MaginLeft02 + '%'
+    }, 500, function () {
+      cnt1Group.find('.image:first').appendTo(cnt1Group);
+      cnt1Group.css({
+        marginLeft: cnt01MaginLeft01 + '%'
+      });
+      cnt1Group.find('.image').css({
+        filter: 'grayscale(1)',
+        height: cnt01EQ
+      });
+      cnt1Group.find('.image').eq(cnt01MoEq).css({
+        filter: 'grayscale(0)',
+        height: cnt01EQ3
+      });
+    });
+
+    cnt1Image2.stop().animate({
+      marginLeft: -200 + '%'
+    }, 500, function () {
+      cnt1Image2.find('.texts:first').appendTo(cnt1Image2);
+      cnt1Image2.css({
+        marginLeft: -100 + '%'
+      });
+    });
+  });
+
+  cntbtn1.click(function () {
+    cnt1Group.stop().animate({
+      marginLeft: 0
+    }, 500, function () {
+      cnt1Group.find('.image:last').prependTo(cnt1Group);
+      cnt1Group.css({
+        marginLeft: cnt01MaginLeft01 + '%'
+      });
+      cnt1Group.find('.image').css({
+        filter: 'grayscale(1)',
+        height: cnt01EQ
+      });
+      cnt1Group.find('.image').eq(cnt01MoEq).css({
+        filter: 'grayscale(0)',
+        height: cnt01EQ3
+      });
+    });
+    cnt1Image2.stop().animate({
+      marginLeft: 0 + '%'
+    }, 500, function () {
+      cnt1Image2.find('.texts:last').prependTo(cnt1Image2);
+      cnt1Image2.css({
+        marginLeft: -100 + '%'
+      });
+    });
+  });
+
+  // cnt02 원형 클릭
   var circle = $('div.cntWrap > div.content.cnt02 > div.section > div.article > div.images > div.image');
   var h3 = $('div.cntWrap>div.content.cnt02>div.section>div.article>div.texts>h3');
 
@@ -336,5 +212,8 @@ $(function () {
   circle.eq(5).click(function () {
     h3.text('"ABSOLUT CITRON6의 맛은 어떤가요?"');
   });
+
+
+
 
 });

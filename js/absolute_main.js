@@ -31,7 +31,6 @@ $(function () {
   var bnrB01 = 0;
   var bnrB02 = 0;
   var bnrB03 = 0;
-  var bnrB04 = 0;
 
   if (wd >= 1025) {
     // PC 햄버거 바
