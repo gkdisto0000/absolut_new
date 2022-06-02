@@ -1,5 +1,4 @@
 $(function () {
-
   // 변수 선언부
   var h4 = $('div.hdrWrap>div.header>div.hdrRight>h4');
   var hdrRight = $('div.hdrWrap>div.header>div.hdrRight2');
@@ -34,117 +33,28 @@ $(function () {
   var bnrB03 = 0;
   var bnrB04 = 0;
 
-
   if (wd >= 1025) {
-
     // PC 햄버거 바
     HRHeight = -280;
     HRHeCLose = -560;
     HRHeLeft = 'calc(100% / 12 * 3.5)';
     cnt02Left = -25;
-
-    // 배너 버튼 레프트
-
-    blue.css({
-      width: 33.333 + '%',
-    });
-
-    bnr2Right.click(function () {
-      i++;
-
-      if (i > 2) {
-        i = 2;
-      }
-      bnrG.css({
-        marginLeft: i * -24 + '%'
-      });
-
-      if (i == 1) {
-        blue.css({
-          width: 66.666 + '%',
-        })
-      } else if (i == 2) {
-        blue.css({
-          width: 100 + '%',
-        })
-      }
-    });
-
-    bnr2Left.click(function () {
-      i--;
-      if (i < 0) {
-        i = 0;
-      }
-      bnrG.css({
-        marginLeft: i * -24 + '%'
-      });
-      if (i == 1) {
-        blue.css({
-          width: i * 66.666 + '%',
-        })
-      } else if (i == 0) {
-        blue.css({
-          width: 33.333 + '%',
-        })
-      }
-    });
-
+    // bnr slide
+    bnrLeft = -24;
+    bnrB01 = 66.666;
+    bnrB02 = 33.333;
+    bnrB03 = 2;
   } else if (wd >= 420 && wd <= 1025) {
-
     // Tablet 햄버거 바
     HRHeight = -200;
     HRHeCLose = -480;
     HRHeLeft = 'calc(100% / 8 * 2.8)';
     cnt02Left = -25;
-
-    // 배너 버튼 레프트
-
-    blue.css({
-      width: 33.333 + '%',
-    });
-
-    bnr2Right.click(function () {
-      i++;
-
-      if (i > 2) {
-        i = 2;
-      }
-      bnrG.css({
-        marginLeft: i * -24 + '%'
-      });
-
-
-      if (i == 1) {
-        blue.css({
-          width: 66.666 + '%',
-        })
-      } else if (i == 2) {
-        blue.css({
-          width: 100 + '%',
-        })
-      }
-    });
-
-    bnr2Left.click(function () {
-      i--;
-
-      if (i < 0) {
-        i = 0;
-      }
-      bnrG.css({
-        marginLeft: i * -24 + '%'
-      });
-      if (i == 1) {
-        blue.css({
-          width: i * 66.666 + '%',
-        })
-      } else if (i == 0) {
-        blue.css({
-          width: 33.333 + '%',
-        })
-      }
-    });
-
+    // bnr slide
+    bnrLeft = -24;
+    bnrB01 = 66.666;
+    bnrB02 = 33.333;
+    bnrB03 = 2;
   } else {
     // 헤더  
     moleft.click(function () {
@@ -152,120 +62,85 @@ $(function () {
         width: '50%'
       });
     });
-
     // 닫기 버튼
     close2.click(function () {
       hdrLeft.css({
         width: '0px'
       });
     });
-
     cnt02Left = -32;
-
     // 배너 버튼 레프트
-    blue.css({
-      width: 0 + '%',
-    });
-
-    bnr2Right.click(function () {
-      i++;
-
-      if (i > 4) {
-        i = 4;
-      }
-      bnrG.css({
-        marginLeft: i * -92 + '%'
-      });
-
-
-      if (i == 1) {
-        blue.css({
-          width: 25 + '%',
-        })
-      } else if (i == 2) {
-        blue.css({
-          width: 50 + '%',
-        })
-      } else if (i == 3) {
-        blue.css({
-          width: 75 + '%',
-        })
-      } else if (i == 4) {
-        blue.css({
-          width: 100 + '%',
-        })
-      }
-
-    });
-
-
-    bnr2Left.click(function () {
-      i--;
-
-      blue.css({
-        width: 0 + '%',
-      });
-
-      if (i < 0) {
-        i = 0;
-      }
-
-      bnrG.css({
-        marginLeft: i * -92 + '%'
-      });
-
-      if (i == 1) {
-        blue.css({
-          width: 25 + '%',
-        })
-      } else if (i == 2) {
-        blue.css({
-          width: 50 + '%',
-        })
-      } else if (i == 3) {
-        blue.css({
-          width: 75 + '%',
-        })
-      } else if (i == 4) {
-        blue.css({
-          width: 100 + '%',
-        })
-      }
-    });
+   bnrLeft = -92;
+   bnrB01 = 25;
+   bnrB02 = 0;
+   bnrB03 = 4;
   }
 
 
   // 햄버거바 액션
-  // PC 햄버거 바
   h4.click(function () {
     hdrRight.css({
       marginTop: HRHeight + 'px'
     });
-
   });
-
   // 닫기 버튼
   close1.click(function () {
     hdrRight.css({
       marginTop: HRHeCLose + 'px'
     });
   });
-
-
   menu.click(function () {
     hdrLeft.css({
       width: HRHeLeft
     });
   });
-
   // 닫기 버튼
   close2.click(function () {
     hdrLeft.css({
       width: '0'
     });
   });
+  // 배너 버튼 레프트
+  blue.css({
+    width: 33.333 + '%',
+  });
+  bnr2Right.click(function () {
+    i++;
+    if (i > bnrB03) {
+      i = bnrB03;
+    }
+    bnrG.css({
+      marginLeft: i * bnrLeft + '%'
+    });
 
-
+    if (i == 1) {
+      blue.css({
+        width: bnrB01 + '%',
+      })
+    } else if (i == 2) {
+      blue.css({
+        width: 100 + '%',
+      })
+    }
+  });
+  bnr2Left.click(function () {
+    i--;
+    if (i < 0) {
+      i = 0;
+    }
+    bnrG.css({
+      marginLeft: i * bnrLeft + '%'
+    });
+    if (i == 1) {
+      blue.css({
+        width: i * bnrB01  + '%',
+      })
+    } else if (i == 0) {
+      blue.css({
+        width: bnrB02 + '%',
+      })
+    }
+  });
   // cnt02 병 슬라이드
   cnt2B.eq(1).click(function () {
     i++;
@@ -278,7 +153,6 @@ $(function () {
       marginLeft: i * cnt02Left + '%'
     })
   });
-
   cnt2B.eq(0).click(function () {
     i--;
     cnt2B.eq(1).css('opacity', '1');
@@ -290,6 +164,4 @@ $(function () {
       marginLeft: i * cnt02Left + '%'
     })
   });
-
-  // 제이쿼리 마침
 });

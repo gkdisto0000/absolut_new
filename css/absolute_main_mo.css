@@ -298,8 +298,14 @@ div.cntWrap>div.content.cnt03>div.section>div.artView>div.artGroup>div.article{
 div.cntWrap>div.content.cnt03>div.section>div.artView{
     margin-left: 0px;
 }
+div.cntWrap>div.content.cnt03>div.header>div.bars{
+    display: none;
+}
 div.cntWrap>div.content.cnt03>div.header>div.bars>div.bar>div.blue{
   width: 0%;
+}
+div.cntWrap>div.content.cnt03>div.header>div.btns{
+    float: left;
 }
 
 
