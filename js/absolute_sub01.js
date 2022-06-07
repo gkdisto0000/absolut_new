@@ -212,8 +212,4 @@ $(function () {
   circle.eq(5).click(function () {
     h3.text('"ABSOLUT CITRON6의 맛은 어떤가요?"');
   });
-
-
-
-
 });

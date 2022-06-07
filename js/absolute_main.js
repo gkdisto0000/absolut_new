@@ -99,6 +99,7 @@ $(function () {
       width: '0'
     });
   });
+  
   // 배너 버튼 레프트
   blue.css({
     width: 33.333 + '%',
@@ -119,7 +120,7 @@ $(function () {
     } else if (i == 2) {
       blue.css({
         width: 100 + '%',
-      })
+      });
     }
   });
   bnr2Left.click(function () {

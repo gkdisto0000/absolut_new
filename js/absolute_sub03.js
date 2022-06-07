@@ -63,14 +63,10 @@ $(function () {
       if (i == 1) {
         blue.css({
           width: '50%',
-          backgroundColor: '#0056a4',
-          height: '5px'
         });
       } if (i == 2) {
         blue.css({
           width: '100%',
-          backgroundColor: '#0056a4',
-          height: '5px'
         });
       }
       cnt01IG.css({
@@ -84,15 +80,11 @@ $(function () {
       } if (i == 1) {
         blue.css({
           width: '50%',
-          backgroundColor: '#0056a4',
-          height: '5px'
         });
       }
       if (i == 0) {
         blue.css({
           width: '0%',
-          backgroundColor: '#0056a4',
-          height: '5px'
         });
       }
       cnt01IG.css({
@@ -121,20 +113,14 @@ $(function () {
       if (i == 1) {
         blue.css({
           width: '33.333%',
-          backgroundColor: '#0056a4',
-          height: '5px'
         });
       } if (i == 2) {
         blue.css({
           width: '66.6666%',
-          backgroundColor: '#0056a4',
-          height: '5px'
         });
       } if (i == 3) {
         blue.css({
           width: '100%',
-          backgroundColor: '#0056a4',
-          height: '5px'
         });
       }
       cnt01IG.css({
@@ -154,26 +140,18 @@ $(function () {
       if (i == 0) {
         blue.css({
           width: '0%',
-          backgroundColor: '#0056a4',
-          height: '5px'
         });
       } if (i == 1) {
         blue.css({
           width: '33.333%',
-          backgroundColor: '#0056a4',
-          height: '5px'
         });
       } if (i == 2) {
         blue.css({
           width: '66.6666%',
-          backgroundColor: '#0056a4',
-          height: '5px'
         });
       } if (i == 3) {
         blue.css({
           width: '100%',
-          backgroundColor: '#0056a4',
-          height: '5px'
         });
       }
       cnt01IG.css({
